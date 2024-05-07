@@ -1,0 +1,190 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 300px;
+    max-height: 300px;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas:
+    "featuredProduct secondaryProduct secondaryProduct"
+    "featuredProduct secondaryProduct secondaryProduct";
+  }
+  
+  .featuredProduct {
+    width: 100%;
+    border-bottom: 5px solid #00c3ff;
+    height: auto;
+    margin: 0px 10px;
+  }
+  
+  .secondaryProduct {
+    width: 75%;
+    height: auto;
+    padding: 0px 10%;
+    z-index: -1;
+  }
+  
+  .heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .headline {
+    background-color: rgba(48, 48, 48, 0.7);
+    border-bottom: 5px solid #00c3ff;
+    width: 100%;
+    padding: 0px 5%;
+  }
+
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid #00c3ff;
+}
+  
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  
+  #navBar h1 {
+    width: 25%;
+    font-weight: 500;
+  }
+  
+  #navigation {
+    display: flex;
+    width: 100%;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+  }
+  
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 16px;
+  }
+
+  .highlight {
+    color:#00c3ff;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #00c3ff;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 0px 0px;
+    color: black;
+  }
+  #headline p {
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color: whitesmoke;
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navLinks a:hover {
+    background-color: #00c3ff;
+    color: white;
+    margin: 5%;
+  }
+
+  .resumeProduct {
+   display: block;
+   margin-bottom: 20px;
+  }
+
+  #workGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 300px;
+    max-height: 300px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "workProduct1" "workProduct2" "workProduct3";
+  }
+
+  .btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #00c3ff;
+  }
+
+  img {
+    width: 25%;
+    object-fit: contain;
+  }
+
+  #homeButton {
+    text-decoration: none;
+    color: black;
+  }
+
+  #homeButton h1 {
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .heroGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+  }
+  
